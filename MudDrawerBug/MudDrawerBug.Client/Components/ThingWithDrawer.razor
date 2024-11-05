@@ -1,0 +1,18 @@
+﻿<MudDrawer @bind-Open="_drawerOpen"
+           Overlay
+           Color="Color.Surface"
+           Anchor="Anchor.End"
+           Variant="DrawerVariant.Temporary">
+        <MudText>Hello</MudText>
+</MudDrawer>
+
+<MudButton Variant="Variant.Filled"
+           Class="mt-2"
+           Color="Color.Primary"
+           OnClick="@(() => _drawerOpen = true)">
+    OpenDrawer
+</MudButton>
+
+@code {
+    private bool _drawerOpen = false;
+}
